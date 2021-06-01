@@ -1,0 +1,93 @@
+body{
+	background-image: url(asset/cover.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#logo{
+	
+  display: inline-block;
+  margin: 15px; 
+  float: left;
+  height: 60px;
+  width: auto; 
+  border-radius: 50%; 
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin: 25px;
+  color:white;
+}
+
+.dd-button {
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 10px 30px 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-button:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid white;
+}
+
+.dd-button:hover {
+  background-color: transparent;
+}
+
+
+.dd-input {
+  display: none;
+}
+
+.dd-menu {
+  position: absolute;
+  top: 100%;
+  border: 1px solid rgb(238,130,238);
+  border-radius: 4px;
+  padding: 10px 50px 10px 50px;
+  margin: 2px 0 0 0 ;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,0.1);
+  background-color: white;
+  list-style-type: none;
+  color:darkviolet;
+}
+
+.dd-input + .dd-menu {
+  display: none;
+
+} 
+
+.dd-input:checked + .dd-menu {
+  display: block;
+} 
+
+.dd-menu li {
+  padding: 10px 20px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.dd-menu li:hover {
+  background-color: #f6f6f6;
+   color:blue;
+}
+
+.dd-menu li a {
+  display: block;
+  margin: -10px -20px;
+  padding: 10px 20px;
+}
+
